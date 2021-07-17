@@ -1,0 +1,176 @@
+/****
+  Autor: @Geisimara Carolina Paulo
+  Criação: @MyAgenda
+
+***/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('/img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:bottom;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img{
+    width: 40px;
+}
+
+header .logo span{
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Bona Nova', serif;
+}
+
+section{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section .cont-login{
+    width: 350px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+}
+
+section .cont-login .title h5{
+    text-align: center;
+    margin-top: 20px;  
+    color: rgb(255, 255, 255);   
+}
+
+section .cont-login form{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: white;
+}
+
+section .cont-login form .form-group{
+    margin-bottom: 10px;
+}
+
+section .cont-login form .form-group label{
+    font-size: 14px;
+}
+
+section .cont-login form .form-group .form-control{
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.295);
+    border: 1px solid transparent
+}
+
+section .cont-login form .form-group .form-check-label{
+    font-size: 13px;
+}
+
+section .cont-login form button{
+    width: 100%;
+    border-radius: 10px;
+}
+
+section .rodape-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+section .rodape-login p{
+    margin-top: 30px;
+    color: white;
+    font-size: 13px;
+}
+
+section .rodape-login a{
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Cadstro */
+section .container {
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+
+section .container .row .img-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section .container .row .img-cadastro img {
+    width: 500px;
+}
+
+section .container .row .cont-cadastro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+section .container .row .cont-cadastro .box-form {
+    width: 260px;
+    height: 80%;
+    margin: auto 0;
+}
+
+section .container .row .cont-cadastro .box-form h5{
+   color: white;
+   text-align: center;
+}
+
+
+section .cont-cadastro .box-form form{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: white;
+}
+
+section .cont-cadastro .box-form form .form-group{
+    margin-bottom: 10px;
+}
+
+section .cont-cadastro .box-form form .form-group label{
+    font-size: 14px;
+}
+
+section .cont-cadastro .box-form form .form-group .form-control{
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.295);
+    border: 1px solid black;
+}
+
+section .cont-cadastro .box-form form .form-group .form-check-label{
+    font-size: 13px;
+}
+
+section .cont-cadastro .box-form form button{
+    width: 100%;
+    border-radius: 10px;
+}
