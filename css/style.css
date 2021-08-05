@@ -1,6 +1,13 @@
 /****
   Autor: @Geisimara Carolina Paulo
   Criação: @MyAgenda
+  font-family: 'Bona Nova', serif;
+
+***/
+
+/****
+
+  font-family: 'Bona Nova', serif;
 
 ***/
 
@@ -38,7 +45,7 @@ header .logo span{
     font-family: 'Bona Nova', serif;
 }
 
-section{   
+section .container{   
     width: 100%;
     height: 100%;
     display: flex;
@@ -54,7 +61,7 @@ section .cont-login{
     border-radius: 30px;
 }
 
-section .cont-login .title h5{
+section .title h5{
     text-align: center;
     margin-top: 20px;  
     color: rgb(255, 255, 255);   
@@ -85,10 +92,43 @@ section .cont-login form .form-group .form-check-label{
     font-size: 13px;
 }
 
+section .box-form form .form-group input{
+    color: black;
+}
+
 section .cont-login form button{
     width: 100%;
     border-radius: 10px;
 }
+
+.cont-login form .form-group{
+    position: relative;
+}
+
+section .cont-login form .form-group input[type=text]{
+    padding-left: 40px;
+}
+
+section .cont-login form .form-group input[type=password]{
+    padding-left: 40px;
+}
+
+section .cont-login form .form-group input[type=email]{
+    padding-left: 40px;
+}
+
+section .cont-login form .form-group input:focus + i{
+    color: rgb(25, 152, 255);
+}
+
+.cont-login form .form-group i{
+    position: absolute;  
+    top: 35px; 
+    padding-left: 10px;
+    color: black;
+}
+
+
 
 section .rodape-login {
     width: 100%;
@@ -110,67 +150,117 @@ section .rodape-login a{
     text-align: center;
 }
 
-/* Cadstro */
-section .container {
-    max-height: 100vh;
-    overflow-x: hidden;
+/* Cadastro */
+
+img{
+    max-width: 100%;
 }
 
-section .container .row .img-cadastro {
+.box-img{
+    display: flex;
+    justify-content:center;
+}
+.box-img img{
+    width: 600px;
+}
+.box-form{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-}
-
-section .container .row .img-cadastro img {
-    width: 500px;
-}
-
-section .container .row .cont-cadastro {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-section .container .row .cont-cadastro .box-form {
-    width: 260px;
-    height: 80%;
-    margin: auto 0;
-}
-
-section .container .row .cont-cadastro .box-form h5{
-   color: white;
-   text-align: center;
-}
-
-
-section .cont-cadastro .box-form form{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 25px;
     color: white;
 }
 
-section .cont-cadastro .box-form form .form-group{
+.box-form form{
+    width: 55%
+}
+
+.box-form .title{
+    margin-bottom: 50px;
+}
+
+section .box-form form .form-group{
     margin-bottom: 10px;
 }
 
-section .cont-cadastro .box-form form .form-group label{
+section .box-form form .form-group label{
     font-size: 14px;
 }
 
-section .cont-cadastro .box-form form .form-group .form-control{
+section .box-form form .form-group .form-control{
     height: 35px;
     background-color: rgba(255, 255, 255, 0.295);
-    border: 1px solid black;
+    border: 1px solid transparent
 }
 
-section .cont-cadastro .box-form form .form-group .form-check-label{
+section .box-form form .form-group .form-check-label{
     font-size: 13px;
 }
 
-section .cont-cadastro .box-form form button{
+section .box-form form .form-group input{
+    color: black;
+}
+
+section .box-form form button{
     width: 100%;
     border-radius: 10px;
+}
+
+.form-group{
+    position: relative;
+}
+
+section .box-form form .form-group input[type=text]{
+    padding-left: 40px;
+}
+
+section .box-form form .form-group input[type=password]{
+    padding-left: 40px;
+}
+
+section .box-form form .form-group input[type=email]{
+    padding-left: 40px;
+}
+
+section .box-form form .form-group input:focus + i{
+    color: rgb(25, 152, 255);
+}
+
+.form-group i{
+    position: absolute;  
+    top: 35px; 
+    padding-left: 10px;
+    color: black;
+}
+
+
+
+/*MEDIAQUERYS*/
+
+
+
+
+
+@media screen and (max-width: 300px) {
+
+    body{
+        overflow-y: auto;
+    }
+    section .cont-login form{
+        width: 90%;
+    }
+  
+}
+
+@media screen and (max-width: 765px) {
+
+    body{
+        overflow-y: auto;
+    }
+    .box-form{
+        margin-top: -50px;
+    }
+    .box-form form{
+        width: 80%
+    }
+  
 }
